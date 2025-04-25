@@ -1,0 +1,14 @@
+.bottle {
+  width: 10%;
+}
+
+.item {
+  width: 10%;
+  background-color: aliceblue;
+}
+
+#firework {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}/*# sourceMappingURL=global.css.map */

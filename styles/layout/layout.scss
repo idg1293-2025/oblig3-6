@@ -1,0 +1,17 @@
+.scene {
+    &__section {
+      height: 100vh;
+      padding: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+  
+      &--intro { background-color: darkblue; color: white;}
+      &--year2000 { background-color: black ; color: white}
+      &--year1900 { background-color: forestgreen; color: white; }
+      &--year1800 { background-color: gold; }
+      &--ending { background-color: hotpink; }
+    }
+}
