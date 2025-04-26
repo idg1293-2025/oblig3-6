@@ -1,17 +1,39 @@
 .scene {
     &__section {
       height: 100vh;
-      padding: 2rem;
+      /*padding: 2rem;*/
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
       text-align: center;
   
-      &--intro { background-color: darkblue; color: white;}
+      &--intro { background-color: rgb(213, 226, 241); color: white;}
       &--year2000 { background-color: black ; color: white}
       &--year1900 { background-color: forestgreen; color: white; }
       &--year1800 { background-color: gold; }
       &--ending { background-color: hotpink; }
     }
+    
 }
+
+.ground {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 25vh; 
+}
+
+.ground2 {
+  position: absolute;
+  bottom: -110%;
+  width: 100%;
+  height: 25vh; /* 1/4 of the viewport height */
+}
+
+.intro-bubble__1 {
+  position: fixed;
+  z-index: 11;
+  top: 15%;
+  filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.2));
+  }

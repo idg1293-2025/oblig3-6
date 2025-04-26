@@ -14,11 +14,24 @@
 </head>
 <body>
     <main class="scene">
+
+        <section class="plastic_bottle">
+          <img class="scene__img bottle" src="/assets/img/plastic-bottle.svg" alt="bottle">
+        </section>
+
         <section class="scene__section scene__section--intro">
           <h1 class="scene__title">The bottle</h1>
           <p class="scene__subtitle">This is an empty plastic bottle</p>
           <p class="scene__text">How far back in time can this bottle travel before breaking down?</p>
-          <img class="scene__img bottle" src="/assets/img/bottle.svg" alt="bottle">
+
+          <svg class="scene__img ground">
+            <rect width="100%" height="100%" fill="rgb(149, 164, 189)" />
+          </svg>
+
+          <svg width="500" height="300" class="intro-bubble__1">
+            <rect width="500" height="200" fill="white" rx="40"/>
+          </svg>
+
           <img class="scene__img item" id="firework" src="assets/img/firework.svg" alt="firework">
           <img class="scene__img item" src="assets/img/firework.svg" alt="firework">
         </section>
@@ -27,16 +40,18 @@
           <h2 class="scene__title">Year 2000</h2>
           <p class="scene__subtitle"> (25 years)</p>
           <p class="scene__text"> bottle fact</p>
-          <img class="scene__img bottle" src="/assets/img/bottle.svg" alt="bottle">
           <img class="scene__img item" src="assets/img/tree.svg" alt="tree">
           <img class="scene__img item" src="assets/img/tree.svg" alt="tree">
+          
+          <svg class="scene__img ground2">
+            <rect width="100%" height="100%" fill="pink" />
+          </svg>
         </section>
 
         <section class="scene__section scene__section--year1900">
           <h2 class="scene__title">Year 2000</h2>
           <p class="scene__subtitle"> (25 years)</p>
           <p class="scene__text"> bottle fact</p>
-          <img class="scene__img bottle" src="/assets/img/bottle.svg" alt="bottle">
           <img class="scene__img item" src="assets/img/car.svg" alt="car">
           <img class="scene__img item" src="assets/img/car.svg" alt="car">
         </section>
@@ -46,7 +61,6 @@
           <h2 class="scene__title">Year 2000</h2>
           <p class="scene__subtitle"> (25 years)</p>
           <p class="scene__text"> bottle fact</p>
-          <img class="scene__img bottle" src="/assets/img/bottle.svg" alt="bottle">
           <img class="scene__img item" src="assets/img/crown.svg" alt="crown">
           <img class="scene__img item" src="assets/img/crown.svg" alt="crown">
         </section>
@@ -54,7 +68,6 @@
         <section class="scene__section scene__section--ending">
           <h2 class="scene__title">Year 2000</h2>
           <p class="scene__text">more fact or something.</p>
-          <img class="scene__img bottle" src="/assets/img/bottle.svg" alt="bottle">
           <img class="scene__img item" src="assets/img/dinosaur.svg" alt="dinosaur">
           <img class="scene__img item" src="assets/img/dinosaur.svg" alt="dinosaur">
           <button class="scene__cta">Discover More</button>
