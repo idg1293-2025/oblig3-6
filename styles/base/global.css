@@ -1,15 +1,56 @@
+@import url("/styles/components/keyframes.scss");
 body, html {
   margin: 0;
   padding: 0;
   height: 100%;
 }
 
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .plastic_bottle {
   position: fixed;
   z-index: 10;
   width: 20%;
   top: 45%;
   left: 40%;
+  animation: float 5s ease-in-out infinite;
+}
+
+.scene__text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease-out;
+}
+
+.scene__text.animate {
+  animation: fadeInText 1s forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.intro-bubble__1 {
+  position: fixed;
+  z-index: 11;
+  top: 15%;
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.2));
 }
 
 .item {
@@ -17,7 +58,7 @@ body, html {
   background-color: aliceblue;
 }
 
-#firework {
+#firework1 {
   position: absolute;
   top: 50%;
   left: 10%;

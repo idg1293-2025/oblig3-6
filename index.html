@@ -10,11 +10,13 @@
 
     <title>Save the world</title>
 
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
     <script src="/script/script.js" defer></script>
 </head>
+
 <body>
     <main class="scene">
-
         <section class="plastic_bottle">
           <img class="scene__img bottle" src="/assets/img/plastic-bottle.svg" alt="bottle">
         </section>
@@ -28,49 +30,68 @@
             <rect width="100%" height="100%" fill="rgb(149, 164, 189)" />
           </svg>
 
+          <!-- might be easier to style text so might remove, do css if not needed
           <svg width="500" height="300" class="intro-bubble__1">
             <rect width="500" height="200" fill="white" rx="40"/>
-          </svg>
+          </svg>  -->
 
-          <img class="scene__img item" id="firework" src="assets/img/firework.svg" alt="firework">
-          <img class="scene__img item" src="assets/img/firework.svg" alt="firework">
         </section>
-    
+      
+
         <section class="scene__section scene__section--year2000">
           <h2 class="scene__title">Year 2000</h2>
           <p class="scene__subtitle"> (25 years)</p>
-          <p class="scene__text"> bottle fact</p>
-          <img class="scene__img item" src="assets/img/tree.svg" alt="tree">
-          <img class="scene__img item" src="assets/img/tree.svg" alt="tree">
+          <p class="scene__text bubble--right">Game cube</p>
+          <img class="scene__img item" id="firework1" src="assets/img/firework.svg" alt="firework">
+          <img class="scene__img item" id="firework2" src="assets/img/firework.svg" alt="firework">
           
           <svg class="scene__img ground2">
             <rect width="100%" height="100%" fill="pink" />
           </svg>
         </section>
 
+
         <section class="scene__section scene__section--year1900">
-          <h2 class="scene__title">Year 2000</h2>
-          <p class="scene__subtitle"> (25 years)</p>
-          <p class="scene__text"> bottle fact</p>
+          <h2 class="scene__title">Year 1900</h2>
+          <p class="scene__subtitle"> (125 years)</p>
+          <p class="scene__text bubble--left"> Model T</p>
           <img class="scene__img item" src="assets/img/car.svg" alt="car">
           <img class="scene__img item" src="assets/img/car.svg" alt="car">
+
+          <svg class="scene__img ground">
+            <rect width="100%" height="100%" fill="rgb(149, 164, 189)" />
+          </svg>
+        </section>
+
+        <section class="scene__section scene__section--year1575">
+          <h2 class="scene__title">Year 1575</h2>
+          <p class="scene__subtitle"> (450 years)</p>
+          <p class="scene__text bubble--left">PET bottle broken down</p>
+          <p class="scene__text bubble--right">Henry III</p>
+          <img class="scene__img item" src="assets/img/crown.svg" alt="crown">
         </section>
 
 
-        <section class="scene__section scene__section--year1800">
-          <h2 class="scene__title">Year 2000</h2>
-          <p class="scene__subtitle"> (25 years)</p>
-          <p class="scene__text"> bottle fact</p>
-          <img class="scene__img item" src="assets/img/crown.svg" alt="crown">
-          <img class="scene__img item" src="assets/img/crown.svg" alt="crown">
+        <section class="scene__section scene__section--year1025">
+          <h2 class="scene__title">Year 1025</h2>
+          <p class="scene__subtitle"> (1000 years)</p>
+          <p class="scene__text bubble--right">Vikings</p>
+          <img class="scene__img item" src="assets/img/tree.svg" alt="tree">
+
+          <svg class="scene__img ground">
+            <rect width="100%" height="100%" fill="rgb(149, 164, 189)" />
+          </svg>
+
         </section>
     
         <section class="scene__section scene__section--ending">
-          <h2 class="scene__title">Year 2000</h2>
-          <p class="scene__text">more fact or something.</p>
-          <img class="scene__img item" src="assets/img/dinosaur.svg" alt="dinosaur">
-          <img class="scene__img item" src="assets/img/dinosaur.svg" alt="dinosaur">
+          <h2 class="scene__title">End</h2>
+          <p class="scene__text bubble--left">something.</p>
           <button class="scene__cta">Discover More</button>
+
+          <svg class="scene__img ground">
+            <rect width="100%" height="100%" fill="rgb(149, 164, 189)" />
+          </svg>
         </section>
     </main>
 
