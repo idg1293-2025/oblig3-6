@@ -1,4 +1,5 @@
 .scene__section {
+  position: relative;
   height: 100vh;
   /*padding: 2rem;*/
   display: flex;
@@ -11,29 +12,29 @@
   background-color: rgb(213, 226, 241);
 }
 .scene__section--year2000 {
-  background-color: black;
+  background-color: rgb(24, 22, 94);
   color: white;
 }
 .scene__section--year1900 {
-  background-color: forestgreen;
+  background-color: rgb(74, 188, 241);
   color: white;
 }
 .scene__section--year1575 {
-  background-color: gold;
+  background-color: rgb(129, 182, 177);
 }
 .scene__section--year1025 {
-  background-color: orange;
+  background-color: rgb(186, 232, 238);
 }
 .scene__section--ending {
-  background-color: hotpink;
+  background-color: rgb(218, 253, 253);
 }
 .scene__title {
-  position: relative;
-  top: -20%;
+  position: absolute;
+  top: 20%;
 }
 .scene__subtitle {
-  position: relative;
-  top: -20%;
+  position: absolute;
+  top: 25%;
 }
 .scene__text {
   background-color: white;
@@ -41,6 +42,65 @@
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 5px 5px grey;
+}
+.scene__section__ground {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 25vh;
+}
+.scene__img__firework-1 {
+  position: absolute;
+  height: 45%;
+  top: 25%;
+  left: 10%;
+}
+.scene__img__firework-2 {
+  position: absolute;
+  height: 30%;
+  top: 10%;
+  left: 70%;
+}
+.scene__img__cube {
+  position: absolute;
+  top: 60%;
+  left: 65%;
+  height: 80%;
+}
+.scene__img__car {
+  position: absolute;
+  top: 50%;
+  height: 30%;
+  left: 70%;
+}
+.scene__img__castle {
+  position: absolute;
+  height: 50%;
+  left: 70%;
+}
+.scene__img__crown {
+  position: absolute;
+  height: 10%;
+  top: 52%;
+  left: 60.5%;
+  transform: rotate(10deg);
+}
+.scene__img__person {
+  position: absolute;
+  height: 30%;
+  left: 55%;
+  top: 60%;
+}
+.scene__img__mountains {
+  position: absolute;
+  left: -10%;
+}
+.scene__img__ship {
+  position: absolute;
+  height: 30%;
+  top: 50%;
+  left: 70%;
+  transform: scaleX(-1);
 }
 
 .bubble--left {
@@ -51,18 +111,4 @@
 .bubble--right {
   position: absolute;
   right: 10%;
-}
-
-.ground {
-  position: relative;
-  bottom: -30%;
-  width: 100%;
-  height: 25vh;
-}
-
-.ground2 {
-  position: absolute;
-  bottom: -110%;
-  width: 100%;
-  height: 25vh; /* 1/4 of the viewport height */
 }/*# sourceMappingURL=layout.css.map */

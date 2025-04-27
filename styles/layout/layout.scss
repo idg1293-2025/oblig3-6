@@ -1,5 +1,6 @@
 .scene {
     &__section {
+      position: relative;
       height: 100vh;
       /*padding: 2rem;*/
       display: flex;
@@ -9,21 +10,21 @@
       text-align: center;
   
       &--intro { background-color: rgb(213, 226, 241);}
-      &--year2000 { background-color: black ; color: white;}
-      &--year1900 { background-color: forestgreen; color: white; }
-      &--year1575 { background-color: gold; }
-      &--year1025 { background-color: orange; }
-      &--ending { background-color: hotpink; }
+      &--year2000 { background-color: rgb(24, 22, 94) ; color: white;}
+      &--year1900 { background-color: rgb(74, 188, 241); color: white; }
+      &--year1575 { background-color: rgb(129, 182, 177); }
+      &--year1025 { background-color: rgb(186, 232, 238); }
+      &--ending { background-color: rgb(218, 253, 253); }
     }
 
     &__title {
-      position: relative;
-      top: -20%;
+      position: absolute;
+      top: 20%;
     }
 
     &__subtitle{
-      position: relative;
-      top: -20%;
+      position: absolute;
+      top: 25%;
     }
 
     &__text {
@@ -33,7 +34,66 @@
       border-radius: 15px;
       box-shadow: 5px 5px grey;
     }
-    
+
+    &__section__ground {
+        position: absolute;   // test, trying to make it more universal
+        bottom: 0%;
+        width: 100%;
+        height: 25vh; 
+    }
+    &__img__firework-1 {
+      position: absolute;
+      height: 45%;
+      top: 25%;
+      left: 10%;
+    }
+    &__img__firework-2 {
+      position: absolute;
+      height: 30%;
+      top: 10%;
+      left: 70%;
+    }
+    &__img__cube {
+      position: absolute;
+      top: 60%;
+      left: 65%;
+      height: 80%;
+    }
+    &__img__car {
+      position: absolute;
+      top: 50%;
+      height: 30%;
+      left: 70%;
+    }
+    &__img__castle {
+      position: absolute;
+      height: 50%;
+      left: 70%;
+    }
+    &__img__crown {
+      position: absolute;
+      height: 10%;
+      top: 52%;
+      left: 60.5%;
+      transform: rotate(10deg);
+    }
+    &__img__person {
+      position: absolute;
+      height: 30%;
+      left: 55%;
+      top: 60%;
+    }
+    &__img__mountains {
+      position: absolute;
+      left: -10%
+    }
+    &__img__ship {
+      position: absolute;
+      height: 30%;
+      top: 50%;
+      left: 70%;
+      transform: scaleX(-1);
+    }
 }
 
 .bubble--left {
@@ -46,16 +106,3 @@
   right: 10%;
 }
 
-.ground {
-  position: relative;   // test, trying to make it more universal
-  bottom: -30%;
-  width: 100%;
-  height: 25vh; 
-}
-
-.ground2 {
-  position: absolute;
-  bottom: -110%;
-  width: 100%;
-  height: 25vh; /* 1/4 of the viewport height */
-}
