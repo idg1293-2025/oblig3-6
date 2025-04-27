@@ -36,39 +36,42 @@
     }
 
     &__section__ground {
-        position: absolute;   // test, trying to make it more universal
+        position: absolute;
         bottom: 0%;
         width: 100%;
         height: 25vh; 
     }
     &__img__firework-1 {
       position: absolute;
-      height: 45%;
-      top: 25%;
+      height: 20%;
+      top: 35%;
       left: 10%;
+      opacity: 0;
     }
     &__img__firework-2 {
       position: absolute;
-      height: 30%;
-      top: 10%;
+      height: 10%;
+      top: 35%;
       left: 70%;
+      opacity: 0;
     }
     &__img__cube {
       position: absolute;
       top: 60%;
-      left: 65%;
+      left: 90%;
       height: 80%;
     }
     &__img__car {
       position: absolute;
       top: 50%;
       height: 30%;
-      left: 70%;
+      left: 95%;
     }
     &__img__castle {
       position: absolute;
       height: 50%;
       left: 70%;
+      opacity: 0;
     }
     &__img__crown {
       position: absolute;
@@ -76,12 +79,14 @@
       top: 52%;
       left: 60.5%;
       transform: rotate(10deg);
+      opacity: 0;
     }
     &__img__person {
       position: absolute;
       height: 30%;
       left: 55%;
       top: 60%;
+      opacity: 0;
     }
     &__img__mountains {
       position: absolute;
@@ -91,7 +96,7 @@
       position: absolute;
       height: 30%;
       top: 50%;
-      left: 70%;
+      left: 90%;
       transform: scaleX(-1);
     }
 }
