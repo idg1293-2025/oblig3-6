@@ -1,0 +1,40 @@
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.plastic_bottle {
+  position: fixed;
+  z-index: 10;
+  width: 20%;
+  top: 45%;
+  left: 40%;
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.scene__text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease-out;
+}
+
+.scene__text.animate {
+  animation: fadeInText 1s forwards;
+  animation-delay: 0.3s;
+}/*# sourceMappingURL=keyframes.css.map */
