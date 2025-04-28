@@ -1,5 +1,4 @@
 // make the text boxes appear
-// make the text boxes appear
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -16,13 +15,12 @@ texts.forEach(text => {
   observer.observe(text);
 });
 
-
-
 // idk if working
 const images = document.querySelectorAll('img');
 images.forEach(image => {
     observer.observe(image);
 });
+
 
 gsap.registerPlugin(ScrollTrigger);
 

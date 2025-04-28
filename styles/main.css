@@ -1,1 +1,220 @@
-/*# sourceMappingURL=main.css.map */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+img {
+  background: transparent;
+}
+
+h1, h2 {
+  font-family: "Slackey", sans-serif;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+/*putting a character limit of 40ch only on p because it messes up the rest of the layout*/
+p {
+  font-family: "Roboto", sans-serif;
+  max-width: 40ch;
+  font-size: 1.5em;
+}
+
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  border-radius: 15px;
+  transition-duration: 0.4s;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer {
+  text-align: center;
+  padding: 0.5em;
+}
+
+footer p {
+  max-width: 100ch;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.plastic_bottle {
+  position: fixed;
+  z-index: 10;
+  width: 20%;
+  top: 45%;
+  left: 40%;
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.scene__text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease-out;
+}
+
+.scene__text.animate {
+  animation: fadeInText 1s forwards;
+  animation-delay: 0.3s;
+}
+
+.scene__section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+}
+.scene__section--intro {
+  background-color: rgb(213, 226, 241);
+}
+.scene__section--year2000 {
+  background-color: rgb(24, 22, 94);
+  color: white;
+}
+.scene__section--year1900 {
+  background-color: rgb(74, 188, 241);
+  color: white;
+}
+.scene__section--year1575 {
+  background-color: rgb(129, 182, 177);
+}
+.scene__section--year1025 {
+  background-color: rgb(186, 232, 238);
+}
+.scene__section--ending {
+  background-color: rgb(218, 253, 253);
+}
+.scene__title {
+  position: absolute;
+  top: 20%;
+}
+.scene__subtitle {
+  position: absolute;
+  top: 25%;
+}
+.scene__text {
+  background-color: white;
+  color: black;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 5px 5px grey;
+}
+.scene__section__ground {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 25vh;
+}
+.scene__img__firework-1 {
+  position: absolute;
+  height: 20%;
+  top: 35%;
+  left: 10%;
+  opacity: 0;
+}
+.scene__img__firework-2 {
+  position: absolute;
+  height: 10%;
+  top: 35%;
+  left: 70%;
+  opacity: 0;
+}
+.scene__img__cube {
+  position: absolute;
+  top: 60%;
+  left: 90%;
+  height: 80%;
+}
+.scene__img__car {
+  position: absolute;
+  top: 50%;
+  height: 30%;
+  left: 95%;
+}
+.scene__img__castle {
+  position: absolute;
+  height: 50%;
+  left: 70%;
+  opacity: 0;
+}
+.scene__img__crown {
+  position: absolute;
+  height: 10%;
+  top: 52%;
+  left: 60.5%;
+  transform: rotate(10deg);
+  opacity: 0;
+}
+.scene__img__person {
+  position: absolute;
+  height: 30%;
+  left: 55%;
+  top: 60%;
+  opacity: 0;
+}
+.scene__img__mountains {
+  position: absolute;
+  left: -10%;
+}
+.scene__img__ship {
+  position: absolute;
+  height: 30%;
+  top: 50%;
+  left: 90%;
+  transform: scaleX(-1);
+}
+.scene .text-1 {
+  position: absolute;
+  top: 35%;
+  left: 30%;
+}
+.bubble--left {
+  position: absolute;
+  left: 10%;
+}
+
+.bubble--right {
+  position: absolute;
+  right: 10%;
+}/*# sourceMappingURL=main.css.map */
