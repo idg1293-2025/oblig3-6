@@ -65,7 +65,7 @@
       position: absolute;
       top: 50%;
       height: 30%;
-      left: 95%;
+      left: 100%;
     }
     &__img__castle {
       position: absolute;
@@ -99,13 +99,19 @@
       left: 90%;
       transform: scaleX(-1);
     }
+    &__recycle-bin {
+      position: absolute;
+      height: 40%;
+      top:50%;
+      opacity: 0;
+    }
     .text-1 {
       position: absolute;
       top: 35%;
       left: 30%;
     }
     .text-2 {
-      
+
     }
 }
 

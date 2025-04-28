@@ -63,8 +63,8 @@ gsap.to("#car", {
       trigger: "#car",
       toggleActions: "restart pause reverse pause"
   },
-  x: -390,
-  duration: 3
+  x: -3000,
+  duration: 15
 });
 
 gsap.to("#person", {
@@ -109,8 +109,19 @@ gsap.to("#bottle", {
   scrollTrigger: {
       trigger: "#bottle-effect",
       end: "80% 92%",
-      toggleActions: "restart resart pause reset"
+      toggleActions: "restart restart pause reset"
   },
   opacity: 0,
+  duration: 3
+});
+
+gsap.to("#recycle-bin", {
+  scrollTrigger: {
+      trigger: "#bottle-effect",
+      markers:true, 
+      end: "80% 92%",
+      toggleActions: "restart resume pause reset"
+  },
+  opacity: 1,
   duration: 3
 });
