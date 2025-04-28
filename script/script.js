@@ -65,8 +65,8 @@ gsap.to("#car", {
       trigger: "#car",
       toggleActions: "restart pause reverse pause"
   },
-  x: -390,
-  duration: 3
+  x: -3000,
+  duration: 15
 });
 
 gsap.to("#person", {
