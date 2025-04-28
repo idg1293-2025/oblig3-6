@@ -1,4 +1,5 @@
 // make the text boxes appear
+// make the text boxes appear
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
