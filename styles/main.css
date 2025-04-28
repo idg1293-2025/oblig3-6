@@ -19,7 +19,7 @@ h1 {
 /*putting a character limit of 40ch only on p because it messes up the rest of the layout*/
 p {
   font-family: "Roboto", sans-serif;
-  max-width: 40ch;
+  max-width: 30ch;
   font-size: 1.5em;
 }
 
@@ -148,14 +148,14 @@ footer p {
 }
 .scene__img__firework-1 {
   position: absolute;
-  height: 20%;
+  max-height: 20%;
   top: 35%;
   left: 10%;
   opacity: 0;
 }
 .scene__img__firework-2 {
   position: absolute;
-  height: 10%;
+  max-height: 10%;
   top: 35%;
   left: 70%;
   opacity: 0;
@@ -164,23 +164,23 @@ footer p {
   position: absolute;
   top: 60%;
   left: 90%;
-  height: 80%;
+  max-height: 80%;
 }
 .scene__img__car {
   position: absolute;
   top: 50%;
-  height: 30%;
+  max-height: 30%;
   left: 100%;
 }
 .scene__img__castle {
   position: absolute;
-  height: 50%;
+  max-height: 50%;
   left: 70%;
   opacity: 0;
 }
 .scene__img__crown {
   position: absolute;
-  height: 10%;
+  max-height: 10%;
   top: 52%;
   left: 60.5%;
   transform: rotate(10deg);
@@ -188,7 +188,7 @@ footer p {
 }
 .scene__img__person {
   position: absolute;
-  height: 30%;
+  max-height: 30%;
   left: 55%;
   top: 60%;
   opacity: 0;
@@ -199,21 +199,21 @@ footer p {
 }
 .scene__img__ship {
   position: absolute;
-  height: 30%;
+  max-height: 30%;
   top: 50%;
   left: 90%;
   transform: scaleX(-1);
 }
 .scene__recycle-bin {
   position: absolute;
-  height: 40%;
+  max-height: 40%;
   top: 50%;
   opacity: 0;
 }
 .scene .text-1 {
   position: absolute;
   top: 35%;
-  left: 30%;
+  left: 40%;
 }
 .bubble--left {
   position: absolute;
