@@ -170,7 +170,7 @@ footer p {
   position: absolute;
   top: 50%;
   height: 30%;
-  left: 95%;
+  left: 100%;
 }
 .scene__img__castle {
   position: absolute;
@@ -203,6 +203,12 @@ footer p {
   top: 50%;
   left: 90%;
   transform: scaleX(-1);
+}
+.scene__recycle-bin {
+  position: absolute;
+  height: 40%;
+  top: 50%;
+  opacity: 0;
 }
 .scene .text-1 {
   position: absolute;
