@@ -111,8 +111,19 @@ gsap.to("#bottle", {
   scrollTrigger: {
       trigger: "#bottle-effect",
       end: "80% 92%",
-      toggleActions: "restart resart pause reset"
+      toggleActions: "restart restart pause reset"
   },
   opacity: 0,
+  duration: 3
+});
+
+gsap.to("#recycle-bin", {
+  scrollTrigger: {
+      trigger: "#bottle-effect",
+      markers:true, 
+      end: "80% 92%",
+      toggleActions: "restart resume pause reset"
+  },
+  opacity: 1,
   duration: 3
 });
