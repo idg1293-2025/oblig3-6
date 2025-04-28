@@ -1,12 +1,12 @@
 .scene__section {
   position: relative;
   height: 100vh;
-  /*padding: 2rem;*/
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  overflow: hidden;
 }
 .scene__section--intro {
   background-color: rgb(213, 226, 241);
@@ -107,7 +107,11 @@
   left: 90%;
   transform: scaleX(-1);
 }
-
+.scene .text-1 {
+  position: absolute;
+  top: 35%;
+  left: 30%;
+}
 .bubble--left {
   position: absolute;
   left: 10%;

@@ -2,12 +2,12 @@
     &__section {
       position: relative;
       height: 100vh;
-      /*padding: 2rem;*/
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
       text-align: center;
+      overflow: hidden;
   
       &--intro { background-color: rgb(213, 226, 241);}
       &--year2000 { background-color: rgb(24, 22, 94) ; color: white;}
@@ -98,6 +98,14 @@
       top: 50%;
       left: 90%;
       transform: scaleX(-1);
+    }
+    .text-1 {
+      position: absolute;
+      top: 35%;
+      left: 30%;
+    }
+    .text-2 {
+      
     }
 }
 

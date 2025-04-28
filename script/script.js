@@ -85,7 +85,7 @@ gsap.to("#crown", {
   },
   opacity: 1,
   duration: 5,
-  delay: 1
+  delay: 1.5
 });
 
 gsap.to("#castle", {
@@ -111,7 +111,6 @@ gsap.to("#bottle", {
   scrollTrigger: {
       trigger: "#bottle-effect",
       end: "80% 92%",
-      markers: true,
       toggleActions: "restart resart pause reset"
   },
   opacity: 0,

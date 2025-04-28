@@ -8,6 +8,21 @@ img {
   background: transparent;
 }
 
+h1, h2 {
+  font-family: "Slackey", sans-serif;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+/*putting a character limit of 40ch only on p because it messes up the rest of the layout*/
+p {
+  font-family: "Roboto", sans-serif;
+  max-width: 40ch;
+  font-size: 1.5em;
+}
+
 footer {
   text-align: center;
   padding: 0.5em;
