@@ -19,12 +19,12 @@
 
     &__title {
       position: absolute;
-      top: 20%;
+      top: 5%;
     }
 
     &__subtitle{
       position: absolute;
-      top: 25%;
+      top: 15%;
     }
 
     &__text {
@@ -64,7 +64,7 @@
     &__img__car {
       position: absolute;
       top: 50%;
-      max-height: 30%;
+      height: 30%;
       left: 100%;
     }
     &__img__castle {
@@ -107,20 +107,80 @@
     }
     .text-1 {
       position: absolute;
+      top: 30%;
+      left: 25%;
+    }
+    .text-2 {
+      position: absolute;
       top: 35%;
       left: 60%;
+    }
+    .text-3 {
+      position: absolute;
+      top: 25%;
+      left: 25%;
+    }
+    .text-4 {
+      position: absolute;
+      top: 35%;
+      left: 60%;
+    }
+    .text-5 {
+      position: absolute;
+      top: 25%;
+      left: 20%;
+    }
+    .text-6 {
+      position: absolute;
+      top: 30%;
+      left: 60%;
+    }
+    .text-7 {
+      position: absolute;
+      top: 20%;
+      left: 15%;
+    }
+    .text-8 {
+      position: absolute;
+      top: 45%;
+      left: 15%;
+    }
+    .text-9 {
+      position: absolute;
+      top: 20%;
+      left: 20%;
+      z-index: 5;
+    }
+    .text-10 {
+      position: absolute;
+      top: 35%;
+      left: 15%;
+    }
+    .text-11 {
+      position: absolute;
+      top: 20%;
+    }
+    .text-12 {
+      position: absolute;
+      top: 35%;
+      right: 15%;
     }
 }
 
 
+.button {
+  background-color: #43c28d;
+  border: none;
+  color: white;
+  padding: 8px 90px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  border-radius: 15px;
+  transition-duration: 0.4s;
 
-.bubble--left {
   position: absolute;
-  left: 10%;
+  right: 17%;
+  top: 60%;
 }
-
-.bubble--right {
-  position: absolute;
-  right: 10%;
-}
-

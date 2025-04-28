@@ -118,7 +118,7 @@ gsap.to("#bottle", {
 gsap.to("#recycle-bin", {
   scrollTrigger: {
       trigger: "#bottle-effect",
-      markers:true, 
+ 
       end: "80% 92%",
       toggleActions: "restart resume pause reset"
   },

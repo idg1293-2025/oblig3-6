@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/base/reset.css">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/base/global.css">
+    <link rel="stylesheet" href="styles/components/keyframes.css">
+    <link rel="stylesheet" href="styles/layout/layout.css">
+    
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +38,10 @@
         <section class="scene__section scene__section--year2000">
           <h2 class="scene__title">Year 2000</h2>
           <p class="scene__subtitle"> (25 years)</p>
-          <p class="scene__text bubble--right">Game cube</p>
+          <p class="scene__text text-3">
+            The millenium changed 25 years ago. Fun fact: people were worried that electronics with dates could not handle the change over to the year 2000!
+          </p>
+          <p class="scene__text text-4">The same year, Nintendo announced their newest game console; the Gamecube.</p>
           
           <svg class="scene__section__ground">
             <rect width="100%" height="100%" fill="rgb(1, 1, 41)" />
@@ -50,7 +56,8 @@
         <section class="scene__section scene__section--year1900">
           <h2 class="scene__title">Year 1900</h2>
           <p class="scene__subtitle"> (125 years)</p>
-          <p class="scene__text bubble--left"> Model T</p>
+          <p class="scene__text text-5"> From 1903, the first massproduction of the automobile Model-T began.</p>
+          <p class="scene__text text-6"> Still not breaking down...</p>
 
           <svg class="scene__section__ground">
             <rect width="100%" height="100%" fill="green" />
@@ -62,8 +69,8 @@
         <section class="scene__section scene__section--year1575">
           <h2 class="scene__title">Year 1575</h2>
           <p class="scene__subtitle"> (450 years)</p>
-          <p class="scene__text bubble--left">PET bottle broken down</p>
-          <p class="scene__text bubble--right">Henry III</p>
+          <p class="scene__text text-7">PET bottles takes at least 450 years to break down. It is long enough to witness Henry III be crowned king of France.</p>
+          <p class="scene__text text-8">Lets take it a step further...</p>
 
           <svg class="scene__section__ground">
             <rect width="100%" height="100%" fill="rgb(53, 92, 50)" />
@@ -78,7 +85,7 @@
         <section class="scene__section scene__section--year1025">
           <h2 class="scene__title">Year 1025</h2>
           <p class="scene__subtitle"> (1000 years)</p>
-          <p class="scene__text bubble--right">Vikings</p>
+          <p class="scene__text text-9">In worse cases, plastic bottles can take up to 1000 years to break down. That is long enough to go back to the end of the viking age.</p>
           
           <svg class="scene__img scene__img__mountains" width="1500" height="1000" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
             <polygon points="100,250 200,100 300,250" fill="#556B2F" />
@@ -98,8 +105,10 @@
     
         <section class="scene__section scene__section--ending">
           <h2 class="scene__title">End</h2>
-          <p class="scene__text bubble--left">The bottle is gone...</p>
-          <button class="button"><a href="https://sdgs.un.org/goals/goal12" target="_blank">Read more</a></button>
+          <p class="scene__text text-10">When a plastic bottle decompose, it will break down to microplastics and stay on the planet for way longer than a 1000 years.</p>
+          <p class="scene__text text-11">Let's prevent plastic from today sticking around until 3025... Recycle the bottles</p>
+          <p class="scene__text text-12">If you want to read more about Sustainable Development Goal 12, click the button below</p>
+          <button class="button"><a href="https://sdgs.un.org/goals/goal12" target="_blank"><p>Goal 12</p></a></button>
 
           <svg class="scene__section__ground" id="bottle-effect">
             <rect width="100%" height="100%" fill="#4b5f70" />
